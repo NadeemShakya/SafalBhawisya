@@ -1,0 +1,5 @@
+Normal green: #15c39a
+Hover Green: #12a882;
+error msg background : #FFE6D8;
+error msg text color:#880000;
+correct answer: rgba(50,205,50, 0.5);
