@@ -1,5 +1,5 @@
-<h1>SafalBhawisya</h1>
-
+<h1 style = "color:#02b875;">SafalBhawisya </h1>
+b
 <h3>A website developed targeting students who've completed S.E.E and is seeking for higher studies. </h3>
 
 <b> Features </b>
