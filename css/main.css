@@ -1,0 +1,863 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+	
+}
+hr {
+	margin:0;
+}
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+*:select {
+	outline: none;
+}
+.fakeWrapper {
+	background-color: black;
+	opacity: .4;
+	display: block;
+	position: fixed;
+	top:0;
+	width:100%;
+	height:100vh;
+	display: none;
+}
+
+.nav-bar {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color:#fff;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,0.2);
+	color:black;
+	
+}
+
+.thirdnavBar {
+	display:none;
+}
+.logo {
+	height:20px;
+	position: absolute;
+	left:10px;
+	top:5px;
+	height:40px;
+	width:40px;
+}
+.logoTitle {
+	
+    margin: 0;
+    line-height: 50px;
+    vertical-align: middle;
+    position: absolute;
+    left: 62px;
+    font-size: 23px;
+    color:#15C39A;
+    font-weight: 500;
+}
+.logoTitle a {
+	text-decoration: none;
+	color:inherit;
+}
+.nav-bar-element {
+	width:100%;
+    display: block;
+    margin: 0 auto;
+    height: 50px
+}
+	
+
+.nav-bar ul{
+	position: absolute;
+	top:0px;
+	list-style-type: none;
+	padding: 0px;
+	margin:0;
+	right:70px;
+	height:48px;
+	
+
+}
+.nav-bar ul li{
+	display: inline-block;
+	padding: 0px;
+	
+}
+
+.menuIcon {
+	display:none;
+}
+
+.nav-bar ul li a{
+	display: block;
+	text-decoration: none;
+	color: rgba(0,0,0,0.7);
+	padding:15px;
+	text-align: center;
+	font-size:14px;
+	font-weight: 500;
+	height:50px;
+	
+}
+
+.nav-bar ul li a:hover {
+	color:#15c39a;
+	transition: .2s;
+}
+.banner {
+	background-image:url(../image/background.jpeg);
+	background-repeat: no-repeat;
+	height:400px;
+	background-position: center center;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	box-shadow:1px 1px 5px 1px grey;
+}
+
+.secondnavBar {
+	background:#fff;
+	height:50px;
+}
+.secondnavBar ul {
+	margin:0;
+	padding:0;
+	width:100%;
+	display:table;
+}
+
+.secondnavBar ul li {
+	display:table-cell;
+	width:25%;
+	line-height:50px;
+	text-transform:uppercase;
+	font-size:12px;
+	border-right:1px solid rgba(0, 0, 0, 0.2);
+	border-bottom:1px solid rgba(0, 0, 0, 0.2);
+	text-align:center;
+	font-weight: bold;
+	
+}
+
+.secondnavBar ul li img {
+	width:30px;
+	height:30px;
+	position: relative;
+	top:10px;
+	left:-5px;
+}
+
+.secondnavBar ul li:nth-child(4) {
+	border-right: none;
+
+}
+
+.profileMenu {
+	height:100;
+	width:150px;
+	background-color: red;
+	position: relative;
+	top:50px;
+	right:0px;
+}
+
+.profile {
+	height:50px;
+	width:200px;
+	/*background-color: red;*/
+	position: absolute;
+	right:0;
+
+}
+
+.profileImg-Div {
+	position: relative;
+	height:50px;
+	width:80px;
+	left:120px;
+	padding:0 5px;
+	top:0px;
+	cursor:pointer;
+
+}
+
+.profileImg-Div:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+.profileImg {
+	position: absolute;
+	height:40px;
+	width:40px;
+	border-radius: 25px;
+	top:5px;
+
+}
+.profileImgIcon {
+	position: absolute;
+	height:40px;
+	width:40px;
+	border-radius: 25px;
+	top:5px;
+	padding:5px;
+	border:1px solid #6eb056;
+}
+.caret-down {
+	position: absolute;
+	height:10px;
+	width:10px;
+	opacity:.4;
+	left:50px;
+	top:20px;
+	/*margin:-50px 0 0 0;*/
+	/*display: none;*/
+}
+.profileOptions-Div {
+}
+.profileOptions-Div ul {
+	position: absolute;
+	background-color: #fff;
+	right:5px;
+	top:51px;
+	width:130px;
+	height:70px;
+	z-index:2;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
+}
+.profileOptions-Div ul li {
+	display: block;
+	/*background-color: yellow;*/
+	height:35px;
+	width:100%;
+	/*border:1px solid rgba(0,0,0,0.25);*/
+}
+
+.profileOptions-Div ul li a {
+	height:35px;
+	width:100%;
+	font-size:13px;
+	font-weight: normal;
+	line-height: 35px;
+	padding:0 5px;
+	color:rgba(0,0,0,0.75);
+}
+.profileOptions-Div ul li a:hover {
+	background-color: #15c39a;
+	color:#fff;
+	border:none;
+}
+
+
+.main-section{
+	position:relative;
+	width: 90%;
+	display: block;
+	margin:50px auto;
+	height:450px;
+	/*background-color: grey;*/
+	
+}
+
+.main-section h1 {
+	text-align: center;
+	margin:10px 0;
+	text-transform:uppercase;
+	font-size:25px;
+	color:rgba(0, 0, 0, 0.8);
+}
+.main-section h3 {
+	text-align: center;
+	margin:0;
+	font-size:15px;
+	margin:0 0 50px 0;
+	color:rgba(0, 0, 0, 0.8);
+
+
+}
+.main-section h2 {
+	text-align: center;
+	font-size: 25px;
+	color:rgba(0,0,0,0.8);
+	margin:20px 0 50px 0;
+
+}
+.portion1 {
+	position:absolute;
+	width:30%;
+	height:300px;
+	left:2.5%;
+	overflow-x:hidden;
+	overflow-y: hidden;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
+	border-radius:2px;
+}
+
+
+.text-portion1, .text-portion2, .text-portion3 {
+	width:auto;
+	line-height: 35px;
+	padding:0 10px;
+	height:35px;
+	position: absolute;
+	font-size:18px;
+	opacity:.9;
+	font-weight:700;
+	color:#fff;
+	background-color:#15c39a;
+}
+.text-portion1 {
+	top:15px;
+}
+.text-portion2 {
+	right:0;
+	top:20px;
+}
+.text-portion3 {
+	top:10px;
+	right:0;
+}
+.fakeDiv{
+	width:100%;
+	height:300px;
+	background-color: rgb(0,0,0);
+	opacity: 0;
+	position: absolute;
+	color:#fff;
+	visibility: hidden;
+	transition: visibility 0s, opacity .3s linear;
+	/*transition:visibility 0s, opacity 0.5s linear;*/
+}
+
+.portion1:hover .fakeDiv, .portion2:hover .fakeDiv , .portion3:hover .fakeDiv{
+	cursor:pointer;
+	opacity: .7;
+	text-align: justify;
+	font-size:14px;
+	visibility: visible;
+}
+.information {
+	height:200px;
+	top:85px;
+	position: absolute;
+	width:80%;
+	left:10%;
+	font-size:13px;
+	line-height: 19px;
+
+}
+.portion2 {
+	position:absolute;
+	width:30%;
+	left:35%;
+	height:300px;
+	overflow-x:hidden;
+	overflow-y: hidden;	
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
+	border-radius:2px;
+}
+.portion3 {
+	position:absolute;
+	width:30%;
+	left:67.5%;
+	height:300px;
+	overflow-x:hidden;
+	overflow-y: hidden;	
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
+	border-radius:2px;
+}
+.portion1 img, .portion2 img, .portion3 img {
+	max-width:100%;
+	height:300px;
+}
+.portion-text {
+	height:150px;
+	width:300px;
+	position: absolute;
+	padding:15px;	
+	font-size:14px;
+	line-height: 20px;
+	text-align: justify;	
+	color:#fff;
+	font-weight: 300;
+	/*opacity:.8;*/
+}
+.portion:hover{
+	cursor:pointer;
+	box-shadow:1px 1px 5px 1px grey;
+	transition: .2s;
+}
+
+.portion p{
+	text-align: center;
+	color: white;
+	margin:15px 0;
+	height:20px;
+	font-size:22px;
+	font-weight: 300;
+}
+
+.circle {
+	position: relative;
+	width: 60px;
+	background-color: #fff;
+	height: 60px;
+	border-radius: 50%;
+	top:23px;
+	left:90%;
+	border: solid 2px #6eb056;
+}
+
+.circle img {
+	height:35px;
+	width:35px;
+	position: absolute;	
+	left:10px;
+	top:10px;
+}
+
+.info {
+	position:relative;
+	width: 90%;
+	left:5%;
+	height:320px;
+	margin:20px 0;
+	/*display: none;*/
+}
+
+.infotext{
+	position:absolute;
+	width:100%;
+	top:20px;
+	padding-right: 30px;
+	padding-left:30px;
+}
+.infotext h2 {
+	text-align: center;
+	font-size: 25px;
+	color:rgba(0, 0, 0, 0.8);
+	font-weight: 700;
+}
+
+.infotext p {
+	font-size:18px;
+	line-height: 22px;
+	text-align: justify;	
+	color:rgba(0,0,0,0.8);
+	font-weight: 300;	
+}
+
+.infotext-header {
+	color:#fff;
+	font-weight: 300;
+}
+.infoimg {
+	position:absolute;
+	right:2.5%;
+	width: 25%;
+	top:50px;
+	height: 300px;
+	/*background-color:red;*/
+	overflow:hidden;
+}
+.infoimg img {
+	/*width:100%;*/
+}
+.footer{
+	position: relative;
+	bottom:0;
+	width: 100%;
+	height: 55px;
+	background-color: #fff;
+	text-align: center;
+	line-height:18px;
+	font-size:12px;
+	padding:10px;
+	color:rgba(0,0,0,0.8);
+
+}
+
+
+/* ` Login CSS */
+
+.signupWrapper {
+	position: fixed;
+	top:0;
+	z-index:999;
+	background:transparent;
+	display: block;
+	width:100%;
+	margin:0 auto;
+}
+.signupForm {
+	background-color:#fff;
+	position: relative;
+	width: 300px;	
+	height: auto;
+	margin: 0px auto;
+	top: 50px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 10px 1px black;
+	animation-name:slider;
+	animation-duration:1s;
+	display: none;
+}
+
+@keyframes slider {
+	from {top:0;}
+	to {top: 50px}
+}
+.signupHeader {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	z-index: 2;
+}
+
+.signupForm .crossButton {
+	position: absolute;
+	z-index: 1;
+	right: -11px;
+	top:-13px;
+	cursor: pointer;
+	border-radius: 3px;
+
+}
+.signupHeader .signup {
+	position: absolute;
+	width: 50%;
+	height:40px;
+	cursor: pointer;
+	background-color:#fff;
+	transition: .2s;
+}
+.signupHeader .login {
+	position: absolute;
+	width: 50%;
+	height:40px;
+	margin: 0px 0px 0px 50%;
+	cursor: pointer;
+	background-color: #15c39a;
+	transition: .2s;
+}
+
+.signupHeader .signup h6, .login h6 {
+	margin:0px ;
+	font-size:15px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	font-weight: normal;
+}
+
+.signupHeader .signup h6 {
+	color:red;
+}
+.signupHeader .login h6 {
+	color:#fff;
+}
+
+.signupBody {
+	position:relative;
+	width: 100%;
+	height: 495px;
+	background-color:#fff;
+	/*display: none;*/
+}
+
+.signupForm input[type = 'text'] , input[type = 'number'], input[type = 'email'], input[type = 'password'], select {
+	margin:15px auto 0px auto;
+	display: block;	
+	height:40px;
+	width:85%;
+	padding:10px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 2px;
+	background-color: #fff;
+	color:rgba(0,0,0,0.75);
+}	
+
+.signupForm input[type = "text"]:focus, .signupForm input[type = "password"]:focus {
+	border:1px solid #15c39a;
+}
+	
+/* Used for placing visibility toggling icon.*/
+.visibilityImgSignup {
+	position: absolute;
+    top: 205px;
+    right: 35px;
+	cursor:pointer;
+}
+
+.visibilityImgLogin {
+	position: absolute;
+    top: 150px;
+    right: 35px;
+	cursor:pointer;
+}
+.signupForm input[type = 'checkbox'] {
+	margin: 0 0 0 20px;
+}
+
+.signupForm hr {
+	width:100%;
+	opacity: .2;
+}
+
+.loginBody {
+	background-color:#fff;
+	position: relative;
+	width: 100%;
+	height: 280px;
+	/*padding:10px;*/
+	/*display: none;*/
+
+}
+
+.errormsgDisplay {
+	padding:5px;
+	background-color:#FFE6D8;	
+	color:#880000;
+	font-size:12px;
+	text-align: center;
+	margin:10px auto;
+	height:auto;
+	line-height: auto;
+	vertical-align: middle;
+	display: none;
+}
+
+.errormsgDisplay p {
+	margin:0;
+}
+
+.loginerrorDisplay {
+	height:30px;
+	width:200px;
+	position: fixed;
+	top:0px;
+	left:45%;
+	display: block;
+	background-color: #FFE6D8;
+	text-align: center;
+	box-shadow: 1px 1px 10px .5px black;
+	color:#880000;
+	line-height: 30px;
+	border-radius: 2px;
+	font-size:14px;
+}
+
+.normalSignup, .normalLogin {
+	background-color: #15c39a;
+	color:#fff;
+	margin:20px auto 0 auto;
+	display: block;	
+	height: 35px;
+	width:85%;
+	padding:5px;
+	border-radius: 2px;
+	border: none;
+	height:40px;
+}
+.normalSignup:hover, .normalLogin:hover {
+
+	background-color: #12a882;
+	transition:.2s;
+	cursor:pointer;
+}
+.googleSignup, .googleLogin {
+	background-color: #DF4A32;
+	color:#fff;
+	border:none;
+	margin:30px auto;
+	display: block;	
+	height: 40px;
+	width:85%;
+	padding:5px;
+	border-radius: 2px;
+	background-image: url('../image/googlePlus.png');
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 8px 10px;
+
+}
+
+.googleSignup:hover, .googleLogin:hover {
+	background-color: #d3351a;
+	transition:.2s;
+
+	cursor:pointer;
+
+}
+
+/*End of Signup Login CSS*/
+
+@media only screen and (max-width:450px) {
+	body {
+		background:#fff;
+		min-height:100%;
+	}
+	/* hide the login signup buttons */
+	.nav-bar  ul {
+		display:none;
+	}
+	.logoTitle {
+		display:none;
+	}
+	/* display menu button */
+	.menuIcon {
+		display:block;
+		height:30px;
+		width:30px;
+		position:absolute;
+		right:10px;
+		top:10px;
+
+	}
+	/* temporarily hiding the banner */
+	.banner {
+		background:none;
+		height:180px;
+		box-shadow: none;
+	}
+
+	.desktopBanner {
+		display:none;
+	}
+
+	.mobBanner {
+		display:block;
+		margin:0 auto;
+		text-align:center;
+		height:180px;
+		position:relative;
+	}
+
+	.mobBanner h1 {
+		margin:0;
+		position:relative;
+		top:50px;
+		font-size:30px;
+	}
+	.mobBanner p {
+		position: absolute;
+		top:80px;
+		text-align:center;
+		font-size:18px;
+		display:block;
+		width:100%;
+		font-weight: 500;
+	}
+	.secondnavBar {
+		height:215px;
+	}
+	.secondnavBar ul li {
+		display:table-row;
+		text-align:center;
+		width:100%;
+		border-bottom:1px solid rgba(0, 0, 0, 0.8);
+		/* background-color:grey; */
+	}
+	.thirdnavBar {
+		/* display:none; */
+		height:40px;
+		background-color:#15C39A;
+		color:#fff;
+		animation-name:thirdnavBar;
+		animation-duration:.7s;
+	}
+	@keyframes thirdnavBar {
+		from {height:0}
+		to {height:40px}
+	}
+	.thirdnavBar ul {
+		margin:0;
+		padding:0;
+		display:table;
+		width:100%;
+	}
+	.thirdnavBar ul li {
+		display:table-cell;
+		width:50%;
+		text-align:center;
+		line-height: 40px;
+		font-size:15px;
+		border-bottom:1px solid rgba(255, 255, 255, 0.7);
+
+	}
+	.thirdnavBar ul li a {
+		color:inherit;
+		text-decoration: none;
+		display:block;
+		height:40px;
+	}
+	.thirdnavBar ul li:nth-child(1) {
+		border-right:1px solid rgba(255, 255, 255, 0.5);
+	}
+	.futureText {
+		color:#15C39A;
+	}
+	.safalText {
+		color:#15C39A;
+	}
+	.main-section {
+		display:table;
+		margin:40px auto;
+	}
+
+	.portion1, .portion2, .portion3 {
+		position:relative;
+		left:2.5%;
+		width:95%;
+		margin:10px 0px;
+		height:250px;	
+	}
+
+	.fakeDiv {
+		visibility: visible;
+		opacity:1;
+		background:rgba(0, 0, 0, 0.5);
+		display:none;
+	}
+	.text-portion1, .text-portion2, .text-portion3 {
+		font-size:20px;
+	}
+	.information {
+		font-size:15px;
+	
+	}
+
+	.info {
+		height:1040px;
+	}
+
+	.footer {
+		position:relative;
+		top:120px;
+		display:none;
+	}
+
+
+	.profileOptions-Div ul {
+		left:0;
+		display: table;
+		width:100%;
+		padding:0;
+		height:35px;
+
+	}
+
+	.profileOptions-Div ul li {
+		display:table-cell;
+		padding:0;
+		width:50%;
+
+	}
+
+}
+
+

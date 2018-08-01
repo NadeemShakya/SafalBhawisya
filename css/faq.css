@@ -1,0 +1,152 @@
+*{
+	box-sizing:border-box;
+}
+
+button:focus {
+	outline:none;
+}
+
+body{
+	height: 90vh;	
+	margin: 0;
+}
+.nav-bar {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color:#fff;
+	color:black;
+}
+.logo {
+	height:20px;
+	position: absolute;
+	left:10px;
+	top:5px;
+	height:40px;
+	width:40px;
+}
+.logoTitle {
+	
+    margin: 0;
+    line-height: 50px;
+    vertical-align: middle;
+    position: absolute;
+    left: 62px;
+    font-size: 23px;
+    color:#15c39a;
+    font-weight: 500;
+}
+.logoTitle a {
+	text-decoration: none;
+	color:inherit;
+}
+.nav-bar-element {
+	width:100%;
+    display: block;
+    margin: 0 auto;
+    height: 60px
+}
+.faqWrapper{
+	position: relative;
+	width: 55%;
+	height: 70vh;
+	padding:20px;
+}
+
+.faqWrapper h2 {
+	font-size:26px;
+	margin:0;
+	position:relative;
+	top:15%;
+	color:rgba(0,0,0,0.75);
+
+}
+
+.faqWrapper h2 {
+	text-align:center;
+}
+
+.right_faq{
+	position: relative;
+	margin:0;
+	top: -70vh;
+	left: 55%;
+	padding: 0;
+	width: 45%;
+	height: 70vh;
+		
+}
+
+h1,p{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	left: 10px;
+	font-style: italic;
+	color: #15c39a;
+}
+
+.faq_ques {
+    background-color: #15c39a;
+    cursor: pointer;
+    padding: 0 15px;
+    width: auto;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    color: #fff;
+    position:relative;
+    left:30%;
+    top:25%;
+}
+
+.faq_ans{
+	position: relative;
+	height: auto;
+	width:80%;
+	padding: 5px;
+	left:30%;
+	top:25%;
+}
+
+.faq_ques:hover {
+	background-color:#12a882;
+	transition: 0.2s;
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.25);
+}
+.faq_ans p {
+	font-size:16px;
+	margin: 10px;
+	color:#ff753f;
+}
+
+.faq_img{
+    position: absolute;
+    margin: 0px;
+    padding: 0;
+    height: 300px;
+    width: 300px;
+    left: 50px;
+    top: 110px;
+}
+
+@media only screen and (max-width:450px) {
+	.right_faq {
+		display:none;
+	}
+	.faqWrapper {
+		width:100%;
+		padding:0;
+	}
+	.faq_ques {
+		left:5%;
+		width:90%;
+	}
+	.faq_ans {
+		left:5%;
+		width:90%;
+	}
+}

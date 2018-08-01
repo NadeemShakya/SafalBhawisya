@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color:#fff;
+}
+* {
+	box-sizing: border-box;
+}
+.nav-bar {
+	position: fixed;
+	z-index:1;
+	border-bottom:1px solid lightgrey;
+	height:55px;
+	/*display: none;*/
+}
+
+.mainDiv {
+	position: relative;
+	width:100%;
+	/*margin:0 auto;*/
+	height:auto;
+	background-color: #fff;
+	top: 60px;
+	padding:10px;
+
+}
+
+.resultDiv {
+	height:auto;
+	background-color: #fff;
+	margin:10px ;
+	padding:10px;
+	line-height:25px;
+	border-radius:3px;
+	font-size:16px;
+	box-shadow:1px 1px 2px 1px rgba(0,0,0,0.25);
+
+
+}
+
+.correctAnswer {
+	background-color: rgba(50,205,50, 0.5);
+	margin:.5% 0% .5% 2%;
+	padding:5px;
+	color:black;
+	font-size:13px;
+	border-radius:2px;
+}
+
+.incorrectAnswer {
+	background-color: #FFE6D8;
+	margin-left:2%;
+	padding:5px;
+	color:black;
+	font-size:13px;
+	border-radius:2px;
+}
+.rightAnswer {
+	/*background-color: #FFE6D8;;*/
+	margin-left:2%;
+	padding:5px;
+	color:black;
+	font-size:13px;	
+}
+
+.pointsDiv {
+	position: relative;
+	width:100%;
+	margin:0 auto;
+	height:auto;
+	background-color: #fff;
+	top: 55px;
+	padding:10px;	
+	color:black;	
+}
+
+.pointsDiv h3, .mainDiv h3 {
+	font-size:25px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	margin:15px 0;
+	/*opacity: .7;*/
+
+}
+
+.pointsDiv p {
+	text-align: center;
+	margin:0;
+	font-size:15px;
+	line-height: 25px;
+	/*opacity: .7;*/
+}
+
+
+.container_HighMarks, .container_LowMarks {
+	position: relative;
+	top:30px;
+	height: 30px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	color:#fff;
+	border-radius: 2px;
+	/*border-right: 1px solid grey;*/
+	padding-left:2px;
+	box-shadow: 1px 0px 1px 1px rgba(0,0,0,0.25);
+
+}
+.container_HighMarks {
+	background-color: #03A45E;
+}
+
+.container_LowMarks {
+	background-color: #ED403C;
+
+}
+.progressBar {
+	height:30px;
+	/*border:1px solid lightgrey;*/
+	/*border-radius:2px;*/
+	/*background-color:grey;*/
+	display: block;
+}
+
+.lowScore {
+	background-color:#00ACAC;
+	margin-top:.1%;
+	padding:0 10px;
+	color:#fff;
+	font-size:12px;
+	height:40px;
+	width:63%;
+	box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+	line-height: 40px;
+	border-radius:2px;
+}
+
+.goodScore {
+	background-color:#00ACAC;
+	margin-top:.1%;
+	padding:0 10px;
+	color:#fff;
+	font-size:13px;
+	height:40px;
+	width:50%;
+	box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+	line-height: 40px;
+	border-radius:2px;
+}
+
+.goBackButton {
+	height:45px;
+	width:95%;
+	display: block;
+	margin:0 auto;
+	background-color: #e90c0c;
+	border:none;
+	color:#fff;
+	border-radius: 2px;
+	font-size:16px;
+
+}
+
+.goBackButton:hover {
+	background-color: red;
+	transition: .2s;
+	cursor:pointer;
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.25);
+}
+
+@media only screen and (max-width:450px) {
+	.goodScore {
+		height: 86px;
+		width: 100%;
+		margin-top: 1%;
+	}
+
+	.lowScore {
+		height: 86px;
+		width:100%;
+	}
+}

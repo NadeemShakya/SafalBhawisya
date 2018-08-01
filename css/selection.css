@@ -1,0 +1,188 @@
+body{
+	margin:0;
+	padding:0;
+    font-family: 'Roboto', sans-serif;	
+}
+* {
+	box-sizing:border-box;
+}
+
+.mainWrapper {
+	width:100%;
+	height:100vh;
+	background-color: red;
+	position: relative;
+}
+
+.leftDiv {
+	position: absolute;
+	width:50%;
+	left:0;
+	background:url('../image/management.jpeg');
+	height:100vh;
+
+}
+
+.leftDiv:hover .fakeWrapper {
+	cursor:pointer;
+	opacity:.8;
+	transition:.3s;
+}
+
+
+.leftDiv .fakeWrapper {
+	width:100%;
+	height:100vh;
+	opacity: .6;
+	background-color: #263059;
+}
+
+.info {
+	position: absolute;
+	top:30%;
+	left:30%;
+	width:40%;
+	height:40%;
+	cursor:pointer;	
+	transition:.6s;
+}
+
+.leftDiv_icon {
+	position: absolute;
+	width:25%;
+	left:37.5%;
+	top:37.5%;
+	transition:.3s;
+}
+.rightDiv_icon {
+	position: absolute;
+	width:25%;
+	left:37.5%;
+	top:37.5%;
+	transition:.3s;
+}
+
+
+.info h2 {
+	position: absolute;	
+	width:80%;
+	left:10%;
+	top:60%;
+	color:#fff;
+	font-weight: 700;
+	font-size:30px;
+	text-align: center;	
+	transition: .3s;
+
+}
+
+.rightDiv{
+	left:50%;
+	position: absolute;
+	width:50%;
+	background:url(../image/science.jpeg);
+	height:100vh;
+
+}
+
+.rightDiv .fakeWrapper {
+	width:100%;
+	height:100vh;
+	background-color:#395A55;
+	opacity: .5;
+
+}
+
+.rightDiv:hover .fakeWrapper {
+	cursor:pointer;
+	opacity:.8;
+	transition:.3s;
+}
+
+.rightDiv:hover .info {
+	transition:.3s;
+	top:23%;
+}
+.leftDiv:hover .info {
+	transition:.3s;
+	top:23%;
+}
+.rightDiv:hover .rightDiv_Icon {
+	width:30%;
+	transition:.3s;
+}
+.leftDiv:hover .leftDiv_Icon {
+	width:30%;
+	transition:.3s;
+}
+.rightDiv:hover .info h2 {
+	font-size:35px;
+	transition:.3s;
+}
+.leftDiv:hover .info h2 {
+	font-size:35px;
+	left:0%;
+	transition:.3s;
+}
+
+.testButton {
+	position: absolute;
+	width: 60%;
+	height:15%;
+	background:transparent	;
+	border:2px solid #02b875;
+	border-radius: 2px;
+	color:#fff;
+	font-size:18px;
+	/*font-weight:700;*/
+	padding:5px;
+	top:100%;
+	left:20%;
+	cursor:pointer;
+	display: none;	
+}
+
+.testButton:hover {
+	background-color: #02b875;
+	transition: .3s;
+	opacity:.5;
+}
+
+@media only screen and (max-width:450px) {
+	.leftDiv {
+		position: relative;
+		width:100%;
+		height:50%;
+		background:url('../image/managementMobile.jpeg');
+
+	}
+	.rightDiv {
+		position:relative;
+		left:0;
+		height:50%;
+		width:100%;
+		background:url(../image/scienceMobile.jpeg);
+
+	}
+	.leftDiv .fakeWrapper {
+		height:100%;
+	}
+	.rightDiv .fakeWrapper {
+		height:100%;
+	}
+	.info h2 {
+		left:0;
+	}
+
+	.management {
+		left:-20px;
+	}
+	.testButton {
+		display:block;
+		width:120px;
+		height:45px;
+		left: 5%;
+    top: 120%;
+	}
+
+}

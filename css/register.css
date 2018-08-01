@@ -1,0 +1,95 @@
+body{
+	margin:0;
+	padding:0;
+    font-family: 'Roboto', sans-serif;	
+    /*background-color: #f2f2f2;*/
+}
+*{
+	box-sizing: border-box;	
+}
+.messageDiv {
+	position: absolute	;
+	width:50%;
+	/*background-color: red;*/
+	left:0;
+	top:60px;
+	height:100vh;
+	padding:12% 0 0 15% ;
+}
+.messageDiv h1 {
+	display: block;
+	text-align: center;
+	font-size:80px;
+	color:grey;
+	margin:0 0 15px 0;
+}
+
+
+
+.messageDiv p {
+	margin:30px 0;
+	text-align: center;
+	/*color:#880000;*/
+	color:grey;
+	font-size:18px;
+
+}
+.imgDiv {
+	position: absolute	;
+	width:50%;
+	left:50%;
+	top:60px;
+	/*background-color: green;*/
+	height:100vh;
+
+}
+.infoImg {
+	display: block;
+	margin:12% 0 0 5%;
+	width:450px;
+}
+
+
+.messageDiv button {
+	margin:10px auto;
+	display: block;	
+	height: 40px;
+	width:35%;
+	padding:5px;
+	border:none;
+	border-radius: 2px;
+	background-color: #15c39a;
+	color:#fff;
+}
+.messageDiv button:hover {
+	background-color: #12a882;
+	transition:.3s;
+	cursor:pointer;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,0.05);
+}
+.messageDiv b {
+	text-align: center;	
+	display: block;	
+	widows: 100%;
+	font-weight:normal;
+	color:rgba(0,0,0,0.6);
+	font-size:12px;
+}
+
+@media only screen and (max-width: 450px) {
+	.messageDiv {
+		width: 100%;
+		left: -25px;
+	}
+	.imgDiv {
+		width: 100%;
+		display:none;
+	}
+	.infoImg {
+		width:150px;
+		height: 150px;
+	}
+	.footer {
+		display:none;
+	}
+}

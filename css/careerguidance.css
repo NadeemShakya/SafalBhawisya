@@ -1,0 +1,106 @@
+body {
+	background-color:#f2f2f2;
+}
+
+.listDiv {
+	width:95%;
+	height:auto;
+	display: block;
+	margin:15px auto;
+	background-color: #fff;
+	padding:0 10px;
+	position: relative;
+	top:20px;
+	border-radius:2px;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,0.25);
+}
+
+.listDivImg {
+	background-color:red;
+	width:25%;
+	position: relative;
+	height:200px;
+	top:15px;
+}
+.listDivImg img {
+	height:200px;
+	width:100%;
+	border-radius:3px;
+	box-shadow:1px 1px 1px 1px rgba(0,0,0,0.15);
+}
+.listDivText {
+	position: absolute;
+	width:70%;
+	left:27.5%;
+	top:20px;
+	/*height:200px;*/
+	padding:10px;
+	text-align: justify;
+	/*display: none;*/
+}
+
+.listDivText h3 {
+	margin:0 0 10px 0;
+	font-size:20px;
+}
+
+.listDivText span{
+	font-size:14px;
+	font-weight:normal;
+	color:rgba(0,0,0,0.8);
+	width:80%;
+}
+
+.listDivText label {
+	font-size:13px;
+	color:rgba(0,0,0,0.6);
+	margin:0 10px 0 0;
+
+}
+.listDiv button {
+	position: relative;
+	top:-20px;
+	left:89%;
+	/*bottom:20px;*/
+	/*right:35px;*/
+	width:100px;
+	height:35px;
+	background-color: #02b875;
+	color:#fff;
+	border:none;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+.listDiv button:hover {
+	background-color: #318D52;
+	transition:.2s;
+}
+
+.listDivText ul {
+	max-resolution: 10px;	
+}
+.listDivText ul li {
+	font-size:14px;	
+	color:rgba(0,0,0,0.8);
+
+}
+
+@media only screen and (max-width:450px) {
+	.listDiv {
+		height:500px;
+	}
+	.listDivImg {
+		width:100%;
+		
+	}
+	.listDivText {
+		width:100%;
+		top:225px;
+		left:0;
+	}
+	.listDiv button {
+		top:245px;
+		left:220px;
+	}
+}
